@@ -14,6 +14,11 @@
 		CDFFB87223AA8CBE0056F22A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFFB87123AA8CBE0056F22A /* Preview Assets.xcassets */; };
 		CDFFB87523AA8CBE0056F22A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFFB87323AA8CBE0056F22A /* LaunchScreen.storyboard */; };
 		CDFFB88023AA8CBE0056F22A /* PowerPlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFB87F23AA8CBE0056F22A /* PowerPlantTests.swift */; };
+		CDFFB88B23AA8E390056F22A /* PowerPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFB88A23AA8E390056F22A /* PowerPlant.swift */; };
+		CDFFB88D23AA91920056F22A /* PowerPlantData.json in Resources */ = {isa = PBXBuildFile; fileRef = CDFFB88C23AA91920056F22A /* PowerPlantData.json */; };
+		CDFFB88E23AA91920056F22A /* PowerPlantData.json in Resources */ = {isa = PBXBuildFile; fileRef = CDFFB88C23AA91920056F22A /* PowerPlantData.json */; };
+		CDFFB89023AA91DF0056F22A /* PowerPlantFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFB88F23AA91DF0056F22A /* PowerPlantFetchingService.swift */; };
+		CDFFB89123AA91DF0056F22A /* PowerPlantFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFB88F23AA91DF0056F22A /* PowerPlantFetchingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,9 @@
 		CDFFB87B23AA8CBE0056F22A /* PowerPlantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerPlantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFFB87F23AA8CBE0056F22A /* PowerPlantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlantTests.swift; sourceTree = "<group>"; };
 		CDFFB88123AA8CBE0056F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFFB88A23AA8E390056F22A /* PowerPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlant.swift; sourceTree = "<group>"; };
+		CDFFB88C23AA91920056F22A /* PowerPlantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PowerPlantData.json; sourceTree = "<group>"; };
+		CDFFB88F23AA91DF0056F22A /* PowerPlantFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlantFetchingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		CDFFB86723AA8CBB0056F22A /* PowerPlant */ = {
 			isa = PBXGroup;
 			children = (
+				CDFFB89223AA96460056F22A /* PowerPlantStructs */,
 				CDFFB86823AA8CBB0056F22A /* AppDelegate.swift */,
 				CDFFB86A23AA8CBB0056F22A /* SceneDelegate.swift */,
 				CDFFB86C23AA8CBB0056F22A /* ContentView.swift */,
@@ -105,6 +114,16 @@
 				CDFFB88123AA8CBE0056F22A /* Info.plist */,
 			);
 			path = PowerPlantTests;
+			sourceTree = "<group>";
+		};
+		CDFFB89223AA96460056F22A /* PowerPlantStructs */ = {
+			isa = PBXGroup;
+			children = (
+				CDFFB88F23AA91DF0056F22A /* PowerPlantFetchingService.swift */,
+				CDFFB88C23AA91920056F22A /* PowerPlantData.json */,
+				CDFFB88A23AA8E390056F22A /* PowerPlant.swift */,
+			);
+			path = PowerPlantStructs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFFB87523AA8CBE0056F22A /* LaunchScreen.storyboard in Resources */,
+				CDFFB88D23AA91920056F22A /* PowerPlantData.json in Resources */,
 				CDFFB87223AA8CBE0056F22A /* Preview Assets.xcassets in Resources */,
 				CDFFB86F23AA8CBE0056F22A /* Assets.xcassets in Resources */,
 			);
@@ -198,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFFB88E23AA91920056F22A /* PowerPlantData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFFB86923AA8CBB0056F22A /* AppDelegate.swift in Sources */,
+				CDFFB89023AA91DF0056F22A /* PowerPlantFetchingService.swift in Sources */,
+				CDFFB88B23AA8E390056F22A /* PowerPlant.swift in Sources */,
 				CDFFB86B23AA8CBB0056F22A /* SceneDelegate.swift in Sources */,
 				CDFFB86D23AA8CBB0056F22A /* ContentView.swift in Sources */,
 			);
@@ -219,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFFB88023AA8CBE0056F22A /* PowerPlantTests.swift in Sources */,
+				CDFFB89123AA91DF0056F22A /* PowerPlantFetchingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
